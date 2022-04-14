@@ -15,7 +15,7 @@
         <form class="formulario">
 
             <h1>Iniciar Sesion</h1>
-            <p>Ingresar Usuario y Contraseña para poder acceder al inventario de Coffee Spot:
+            <p>Ingresar usuario y contraseña para poder acceder a la administración de Coffee Spot:
             <div class="contenedor">
             
             <div class="input-contenedor">
@@ -29,11 +29,11 @@
             </div>
 
             <input type="submit" value="Ingresar" class="button">
-            <p>Si tienes algun problema al ingresar, por favor contactar en brevedad al encargado del inventario.</p>
+            <p>Si tienes algun problema al ingresar, por favor contactar en brevedad al supervisor designado</p>
 
             </div>
         </form>
-        <a href="home.html " class="boton">Ir a la pagina web</a>
+        <a href="{{ url_for('auth.register') }}" class="boton">Ir a la pagina web</a>
     </div>
 
     <style>
